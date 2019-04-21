@@ -21,16 +21,22 @@
 # definition file).
 #
 
+# Set boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit from Havoc custom product configuration
+# Inherit from Project-Fenix custom product configuration
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.fenix.maintainer=QuixoticFP
+TARGET_BUILD_TYPE := OFFICIAL
+
+TARGET_GAPPS_ARCH := arm64
+
+
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi

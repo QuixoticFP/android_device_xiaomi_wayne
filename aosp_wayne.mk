@@ -32,7 +32,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
 
-TARGET_BUILD_TYPE := OFFICIAL
+CUSTOM_BUILD_TYPE := OFFICIAL
 
 TARGET_GAPPS_ARCH := arm64
 
